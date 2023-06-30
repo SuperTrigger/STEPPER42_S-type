@@ -31,7 +31,7 @@
 
 /****************************************************************/
 
-#define TIM_PRESCALER               (6 - 1)
+#define TIM_PRESCALER               (25 - 1) //25--35
 // 定义定时器周期，输出比较模式周期设置为0xFFFF
 #define TIM_PERIOD                   0xFFFF
 

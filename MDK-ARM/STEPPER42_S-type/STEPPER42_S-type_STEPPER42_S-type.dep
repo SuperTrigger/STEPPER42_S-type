@@ -1,7 +1,7 @@
 Dependencies for Project 'STEPPER42_S-type', Target 'STEPPER42_S-type': (DO NOT MODIFY !)
 F (startup_stm32f103xe.s)(0x649E7481)(--cpu Cortex-M3 -g --apcs=interwork -I d:\HARDSOFT\stm32_cubemx\STEPPER42_S-type\MDK-ARM\RTE-I E:\keil5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I E:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0--pd "__UVISION_VERSION SETA 514" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1"--list startup_stm32f103xe.lst --xref -o stepper42_s-type\startup_stm32f103xe.o --depend stepper42_s-type\startup_stm32f103xe.d)
 F (..\Core\stepper\stepper_init.c)(0x649E71B0)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Core -I../Core/stepper -I..\Core\usart-I d:\HARDSOFT\stm32_cubemx\STEPPER42_S-type\MDK-ARM\RTE-I E:\keil5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I E:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o stepper42_s-type\stepper_init.o --omf_browse stepper42_s-type\stepper_init.crf --depend stepper42_s-type\stepper_init.d)
-I (..\Core\stepper\stepper_init.h)(0x649E7B0B)
+I (..\Core\stepper\stepper_init.h)(0x649E81E8)
 I (../Inc/main.h)(0x649E7577)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x64745D33)
 I (../Inc/stm32f1xx_hal_conf.h)(0x649E747F)
@@ -36,7 +36,7 @@ I (E:\keil5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (E:\keil5\ARM\ARMCC\include\math.h)(0x5475F2FE)
 I (E:\keil5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
 F (..\Core\stepper\stepper_S_speed.c)(0x649E78D9)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Core -I../Core/stepper -I..\Core\usart-I d:\HARDSOFT\stm32_cubemx\STEPPER42_S-type\MDK-ARM\RTE-I E:\keil5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I E:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o stepper42_s-type\stepper_s_speed.o --omf_browse stepper42_s-type\stepper_s_speed.crf --depend stepper42_s-type\stepper_s_speed.d)
-I (..\Core\stepper\stepper_S_speed.h)(0x649E7AEE)
+I (..\Core\stepper\stepper_S_speed.h)(0x649E80B8)
 I (../Inc/main.h)(0x649E7577)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x64745D33)
 I (../Inc/stm32f1xx_hal_conf.h)(0x649E747F)
@@ -70,7 +70,7 @@ I (E:\keil5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (E:\keil5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (E:\keil5\ARM\ARMCC\include\math.h)(0x5475F2FE)
 I (E:\keil5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\Core\stepper\stepper_init.h)(0x649E7B0B)
+I (..\Core\stepper\stepper_init.h)(0x649E81E8)
 I (..\Core\usart\serial_port.h)(0x649E74DA)
 F (..\Core\usart\serial_port.c)(0x649E74F1)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Core -I../Core/stepper -I..\Core\usart-I d:\HARDSOFT\stm32_cubemx\STEPPER42_S-type\MDK-ARM\RTE-I E:\keil5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I E:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o stepper42_s-type\serial_port.o --omf_browse stepper42_s-type\serial_port.crf --depend stepper42_s-type\serial_port.d)
 I (..\Core\usart\Serial_port.h)(0x649E74DA)
@@ -144,8 +144,8 @@ I (E:\keil5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
 I (../Inc/tim.h)(0x649E70B8)
 I (../Inc/usart.h)(0x649E747F)
 I (../Inc/gpio.h)(0x649E6F24)
-I (../Core/stepper/stepper_init.h)(0x649E7B0B)
-I (../Core/stepper/stepper_S_speed.h)(0x649E7AEE)
+I (../Core/stepper/stepper_init.h)(0x649E81E8)
+I (../Core/stepper/stepper_S_speed.h)(0x649E80B8)
 I (..\Core\usart\serial_port.h)(0x649E74DA)
 F (../Src/gpio.c)(0x649E70B8)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Core -I../Core/stepper -I..\Core\usart-I d:\HARDSOFT\stm32_cubemx\STEPPER42_S-type\MDK-ARM\RTE-I E:\keil5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I E:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o stepper42_s-type\gpio.o --omf_browse stepper42_s-type\gpio.crf --depend stepper42_s-type\gpio.d)
 I (../Inc/gpio.h)(0x649E6F24)

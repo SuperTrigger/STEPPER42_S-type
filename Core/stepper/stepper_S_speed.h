@@ -4,7 +4,7 @@
 #include "main.h"
 #include "stepper_init.h"
 
-#define FORM_LEN 	   8000
+#define FORM_LEN 	   15000
 
 typedef struct {
 	__IO uint8_t  status;       // 状态 
@@ -39,7 +39,7 @@ typedef enum {
 #define STEP_ANGLE				1.8f //步进电机的步距角 单位：度
 #define FSPR              		(360.0f / 1.8f) //步进电机的一圈所需脉冲数
 			
-#define MICRO_STEP        		16 //细分器细分数 
+#define MICRO_STEP        		32 //细分器细分数 
 #define SPR               		(FSPR * MICRO_STEP)              //细分后一圈所需脉冲数
 
 #define CONVER(speed)           (float)(speed * SPR / 60.0f)     //根据电机转速（r/min），计算电机步速（step/s）
